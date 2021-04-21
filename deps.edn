@@ -371,6 +371,10 @@
   ;; Navigate data - edn, json, transit
   ;; https://github.com/djblue/portal
 
+  :portal/cli
+  {:main-opts ["-m" "portal.main"]
+   :extra-deps {djblue/portal {:mvn/version "0.6.4"}
+                cheshire/cheshire {:mvn/version "5.10.0"}}}
   :inspect/portal-cli
   {:extra-deps {djblue/portal {:mvn/version "0.6.4"}}}
 
